@@ -1,0 +1,66 @@
+<!--By nikita Krievskij-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+        <title>Стилизацея и отпрака на почту</title> 
+    </head>
+    <body>
+        <div class="container">
+            
+            <div class="form">
+                <form action="mail.php" id="form" method="POST" class="form__body" name="contact" netlify>
+                    <h1 class="form__title">EXPERT MEDICAL</h1>
+                    <div class="form__item">
+                        <label for="formName" class="form__label">Призвіще Ім'я:</label>
+                        <input id="" type="text" name="user_name" class="form__input" placeholder="Призвіще Ім'я" >
+                    </div>
+                    <div class="form__item">
+                        <label for="formEmail" class="form__label">Номер телефона:</label>
+                        <input id="" type="text" name="user_phone" class="form__input"  placeholder="+380 12 345 6789">
+                    </div>
+                    <div class="form_item">
+                       <div class="form__lable">Виберіть послугу:</div>
+                       <div class="options">
+                           <div class="options__item">
+                               <input id="formRightHanded" type="radio" value="right" name="hand" class="options__input">
+                               <label for="formRightHanded" class="options__label">Консультація лікаря </label>
+                           </div>
+                           <div class="options__item">
+                            <input id="formLeftHanded" type="radio" value="left" name="hand" class="options__input">
+                            <label for="formLeftHanded" class="options__label">УЗД</label>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="form__item">
+                        <label for="formMessage" class="form__label">Сообщение:</label>
+                        <textarea name="message" id="formMessage" class="form__input"></textarea>
+                    </div>
+                    <div class="form__item">
+                        <div class="form__label">Возраст</div>
+                        <select name="age" class="select">
+                            <option value="от 12 до 18" selected>от 12 до 18</option>
+                            <option value="от 19 до 45">от 19 до 45</option>
+                            <option value="от 46 до 70+" selected="selected">от 46 до 70+</option>
+                        </select>
+                    </div>
+                    
+                        <button type="submit" class="form__button">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>  
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+    </body>
+</html>
